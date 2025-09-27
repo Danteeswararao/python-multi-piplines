@@ -117,7 +117,7 @@ pipeline {
         
         stage('SonarQube Analysis') {
             environment {
-                SONAR_TOKEN = credentials('sonarqube-token')
+                SONAR_TOKEN = credentials('sonarqube')
             }
             steps {
                 echo 'Running SonarQube analysis...'
