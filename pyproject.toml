@@ -7,9 +7,10 @@ readme = "README.md"
 packages = [{include = "helloworld"}]
 
 [tool.poetry.dependencies]
-python = "^3.8"
+python = ">=3.8.1,<4.0"
 flask = "^2.3.0"
 gunicorn = "^21.2.0"
+flake8 = "^6.0.0"
 
 [tool.poetry.group.dev.dependencies]
 pytest = "^7.4.0"
